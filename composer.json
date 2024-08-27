@@ -1,0 +1,18 @@
+{
+    "name": "hindbiswas/convo",
+    "description": "Take input or print text on terminal and web",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hindbiswas\\Convo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hind Sagar Biswas",
+            "email": "hindsbhk@gmail.com"
+        }
+    ],
+    "require": {}
+}

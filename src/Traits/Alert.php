@@ -13,21 +13,21 @@ trait Alert {
         $this->engine->put("\n" . $label . ' ' . $message . "\n\n");
     }
 
-    public function inform(string $message) {
+    public function alertInfo(string $message) {
         $this->sayWithLabel($message, 'INFO', Color::BG_BLUE);
     }
 
-    public function warn(string $message)
+    public function alertWarning(string $message)
     {
         $this->sayWithLabel($message, 'WARNING', Color::BG_YELLOW);
     }
 
-    public function error(string $message)
+    public function alertError(string $message)
     {
         $this->sayWithLabel($message, 'ERROR', Color::BG_RED);
     }
 
-    public function success(string $message)
+    public function alertSuccess(string $message)
     {
         $this->sayWithLabel($message, 'SUCCESS', Color::BG_GREEN);
     }

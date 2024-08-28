@@ -8,7 +8,7 @@ use Hindbiswas\Convo\Enums\Engine;
 
 $convo = new Conversation(Engine::SMART);
 
-$convo->inform('This is an information');
-$convo->success('This is a success');
-$convo->warn('This is a warning');
-$convo->error('This is an error');
+$convo->alertInfo('This is an information');
+$convo->alertError('This is an error');
+$convo->alertWarning('This is a warning');
+$convo->alertSuccess('This is a success');

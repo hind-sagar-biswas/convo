@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Hindbiswas\Convo;
+namespace Hindbiswas\Convo\Engines;
 
 use Hindbiswas\Convo\Enums\Color;
 use Hindbiswas\Convo\Enums\DataType;
@@ -81,6 +81,6 @@ class SmartEngine
 
     public function paint(string $text, Color $color): string
     {
-        return $color->value . $text . Color::RESET;
+        return $color->value . $text . Color::RESET->value;
     }
 }

@@ -5,8 +5,15 @@ declare(strict_types=1);
 namespace Hindbiswas\Convo;
 
 use Hindbiswas\Convo\Enums\Engine;
+use Hindbiswas\Convo\Traits\Alert;
+use Hindbiswas\Convo\Traits\Speaker;
+use Hindbiswas\Convo\Engines\AutoEngine;
+use Hindbiswas\Convo\Engines\BasicEngine;
+use Hindbiswas\Convo\Engines\SmartEngine;
 
 class Conversation {
+    use Speaker, Alert;
+
     public readonly BasicEngine|AutoEngine|SmartEngine $engine;
 
     public function __construct(Engine $engine = Engine::BASIC) {

@@ -10,7 +10,7 @@ trait Alert {
     private function sayWithLabel(string $message, string $label, Color $color)
     {
         $label = $this->engine->paint(' ' . $label . ' ', $color);
-        $this->engine->put($label . ' ' . $message . '\n');
+        $this->engine->put("\n" . $label . ' ' . $message . "\n\n");
     }
 
     public function inform(string $message) {

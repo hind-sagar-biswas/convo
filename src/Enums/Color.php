@@ -27,7 +27,7 @@ enum Color: string {
     case BG_BLACK = "\e[1;37;40m";
     case BG_RED = "\e[1;37;41m";
     case BG_GREEN = "\e[1;37;42m";
-    case BG_YELLOW = "\e[\e[0;30;43m";
+    case BG_YELLOW = "\e[0;30;43m";
     case BG_BLUE = "\e[1;37;44m";
     case BG_MAGENTA = "\e[1;37;45m";
     case BG_CYAN = "\e[\e[0;30;46m";

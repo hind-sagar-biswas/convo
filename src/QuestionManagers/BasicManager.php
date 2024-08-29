@@ -23,6 +23,7 @@ class BasicManager extends Manager implements ManagerInterface
             $prompt .= $examples;
         }
        
-        return $this->convo->engine->get($prompt);
+        $input = $this->convo->engine->get($prompt);
+        return (isset($this->default_value) && $input === '') ? $this->default_value : $input;
     }
 }

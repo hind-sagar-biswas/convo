@@ -8,11 +8,14 @@ use Hindbiswas\Convo\Enums\Color;
 
 class BasicEngine
 {
-    public function put(string $text) {
+    public function put(string $text)
+    {
         echo $text;
     }
-    
-    public function get(string $prompt) {
-        return readline($prompt . ' ');
+
+    public function get(string $prompt)
+    {
+        $this->put($prompt);
+        return readline(" ");
     }
 }

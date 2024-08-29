@@ -70,7 +70,7 @@ class SmartEngine
     {
         $input = readline($prompt . ' ');
         return match ($data_type) {
-            DataType::STR => $input,
+            DataType::STR => ($input == '') ? null : $input,
             DataType::INT => $this->getInt($input),
             DataType::BOOL => $this->getBool($input),
             DataType::FLOAT => $this->getFloat($input),

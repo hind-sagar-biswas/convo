@@ -11,9 +11,10 @@ use Hindbiswas\Convo\Traits\Speaker;
 use Hindbiswas\Convo\Engines\AutoEngine;
 use Hindbiswas\Convo\Engines\BasicEngine;
 use Hindbiswas\Convo\Engines\SmartEngine;
+use Hindbiswas\Convo\Traits\QuestionManager;
 
 class Conversation {
-    use Speaker, Alert;
+    use Speaker, Alert, QuestionManager;
 
     public readonly BasicEngine|AutoEngine|SmartEngine $engine;
 

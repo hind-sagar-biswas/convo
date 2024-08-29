@@ -6,14 +6,16 @@ namespace Hindbiswas\Convo\Traits;
 
 use Hindbiswas\Convo\Enums\Color;
 
-trait Alert {
+trait Alert
+{
     private function sayWithLabel(string $message, string $label, Color $color)
     {
-        $label = $this->engine->paint(' ' . $label . ' ', $color);
+        $label = $this->paint(' ' . $label . ' ', $color);
         $this->engine->put("\n" . $label . ' ' . $message . "\n\n");
     }
 
-    public function alertInfo(string $message) {
+    public function alertInfo(string $message)
+    {
         $this->sayWithLabel($message, 'INFO', Color::BG_BLUE);
     }
 

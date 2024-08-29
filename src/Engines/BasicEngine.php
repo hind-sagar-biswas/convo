@@ -15,9 +15,4 @@ class BasicEngine
     public function get(string $prompt) {
         return readline($prompt . ' ');
     }
-
-    public function paint(string $text, Color $color): string
-    {
-        return $color->value . $text . Color::RESET->value;
-    }
 }

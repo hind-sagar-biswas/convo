@@ -32,9 +32,4 @@ class AutoEngine
             DataType::JSON => json_validate($input) ? $input : null,
         };
     }
-
-    public function paint(string $text, Color $color): string
-    {
-        return $color->value . $text . Color::RESET->value;
-    }
 }
